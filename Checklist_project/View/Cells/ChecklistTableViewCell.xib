@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChecklistCell" id="KGk-i7-Jjw" customClass="ChecklistTableViewCell" customModule="Checklist_project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wfb-QC-IP3">
+                        <rect key="frame" x="288" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="00x-Iz-K8q"/>
+                            <constraint firstAttribute="height" constant="20" id="3Yx-Yb-9Ay"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2D-y7-wly">
+                        <rect key="frame" x="62" y="11.5" width="182" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="rga-Iz-LzD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n8H-sM-hue">
+                        <rect key="frame" x="256" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="eTv-Aq-U0D"/>
+                            <constraint firstAttribute="height" constant="20" id="tZS-wH-9Mm"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L4Q-KW-URD">
+                        <rect key="frame" x="30" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="bba-Dy-oQw"/>
+                            <constraint firstAttribute="width" constant="20" id="uGS-UX-LbR"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wfb-QC-IP3" firstAttribute="leading" secondItem="n8H-sM-hue" secondAttribute="trailing" constant="12" id="34U-62-w4a"/>
+                    <constraint firstItem="n8H-sM-hue" firstAttribute="leading" secondItem="h2D-y7-wly" secondAttribute="trailing" constant="12" id="6Hy-eH-rVL"/>
+                    <constraint firstItem="h2D-y7-wly" firstAttribute="leading" secondItem="L4Q-KW-URD" secondAttribute="trailing" constant="12" id="8sC-tE-am6"/>
+                    <constraint firstItem="wfb-QC-IP3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="IIw-YT-Cey"/>
+                    <constraint firstItem="L4Q-KW-URD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NvN-gI-Uyn"/>
+                    <constraint firstAttribute="trailing" secondItem="wfb-QC-IP3" secondAttribute="trailing" constant="12" id="U3D-2v-6mn"/>
+                    <constraint firstItem="n8H-sM-hue" firstAttribute="top" secondItem="wfb-QC-IP3" secondAttribute="top" id="Yxe-DY-0D2"/>
+                    <constraint firstItem="h2D-y7-wly" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="b1F-0E-KCq"/>
+                    <constraint firstItem="wfb-QC-IP3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="q0I-Mg-2FJ"/>
+                    <constraint firstItem="L4Q-KW-URD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="zdM-vg-Jkg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </tableViewCell>
+    </objects>
+</document>
